@@ -1,0 +1,83 @@
+h1 {
+    color: #008000;
+}
+
+#map {
+    height: 500px;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 5%;
+    float: left;
+    visibility:visible;
+}
+
+#results{
+
+}
+
+td, th{
+    text-align: center;
+
+}
+
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    //width: 32px;
+    // height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+}
+
+.testBorder{
+    border: 1px solid black;
+    height: 800px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.db, .db:hover{
+    margin: 25px auto;
+    //border: 2px solid #33a6cc;
+    border: 0px;
+    margin-left: 40px;
+    height: 300px;
+    align-content: left;
+    background: none;
+    color: black;
+    width: auto;
+}
+
+.db2, .db2:hover{
+    margin: 15px auto;
+    border: 2px solid white;
+
+    margin-left: 40px;
+    height: 250px;
+    align-content: center;
+    background: none;
+    color: white;
+    width: auto;
+}
+
+.setText{
+    text-align: center;
+}
+
+.active{
+    border-bottom: 2px solid  #040937;
+}
+
+.navbar-default {
+    background-color: #FF5733;
+    border-color: #E7E7E7;
+}

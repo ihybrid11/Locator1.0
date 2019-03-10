@@ -1,0 +1,36 @@
+
+<div class="container" >
+
+        <form ng-submit="">
+            <input id="pin" ng-model="pin" class="form-control" placeholder="pincode" autocomplete="off" value="" style=" width: 200px; margin-left: 5px; float:left">
+            <button ng-click="find_pin()" class="btn btn-default" style=" float:left; margin-left: 5px"><span class="glyphicon glyphicon-search"></span></button>
+            <button ng-click="find_l()" class="btn btn-default" style="float:left; margin-left: 5px"><span class="glyphicon glyphicon-map-marker"></span></button>
+
+            <input id="r_type" ng-model="r_type" class="form-control" placeholder="{{ input_placeholder }}" autocomplete="off" value="" style="float:left; width: 600px; margin-left: 5px">
+            <button class="btn btn-default" ng-click="find_r()" style="margin-left: 5px"><span class="glyphicon glyphicon-search"></span></button>
+
+        </form>
+        <section style="margin-top:40px;">
+            <div id="map" style=""></div>
+            <table id="results" class="table table-bordered" style="margin-top:40px; visibility:hidden">
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Open Now</th>
+                    <th>Price level</th>
+                    <th>Route</th>
+                    <tr ng-repeat="r in route">
+                        <td><img src="{{ r.icon }}"/></td>
+                        <td>{{ r.name }}</td>
+                        <td>{{ r.rating }}</td>
+                        <td>{{ r.opening_hours.open_now }}</td>
+                        <td>{{ r.price_level }}</td>
+                        <td><a target='_blank' href="http://maps.google.com/maps?q=loc:{{r.geometry.location.lat()}},{{r.geometry.location.lng()}}"><span class='glyphicon glyphicon-search'></span></a> </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </section>
+
+</div>
